@@ -1,0 +1,39 @@
+/** Lifestyle Store Database: 15 items for sale sorted by id, item_name, price, quantity in stock, and department: hats, necklaces, bracelets, anklets, watches, books, planners, pens, notebook, Stay Organized starter kit, water bottles, fragrances for men and women, logo stickers, reusbale bags **/
+
+--Create a lifestlyle store database
+CREATE TABLE store_database (ID INTEGER, Item_Name TEXT, Price INTEGER, Quantity integer, Department TEXT);
+
+INSERT INTO store_database VALUES
+(1, "Hat", 30, 25, "Accessories"), 
+(2, "Necklace", 125, 10, "Accessories"),
+(3, "Bracelet", 75, 15, "Accessories"),
+(4, "Anklet", 50, 15, "Accessories"),
+(5, "Watch", 60, 50, "Accessories"),
+(6, "Book", 25, 100, "Stationary"),
+(7, "Planner", 20, 250, "Stationary"), 
+(8, "Pen", 4, 500, "Stationary"),
+(9, "Notebook", 10, 350, "Stationary"), 
+(10, "Organizer_Pack", 7, 200, "Stationary"), 
+(11, "Bottle", 15, 400, "Miscellaneous"),
+(12, "Candle", 45, 400, "Miscellaneous"),
+(13, "Fragrance", 100, 200, "Miscellaneous"),
+(14, "Stickers", 3, 600, "Miscellaneous"), 
+(15, "Bag", 1, 2000, "Miscellaneous");
+
+
+--Display the store items ordered by price
+SELECT *
+FROM store_database
+ORDER BY item_name asc; 
+
+--Display the total number of items in stock by department
+SELECT department, SUM(quantity) AS "Items In Stock", AVG(price) AS "Average Price"
+FROM store_database
+GROUP BY department
+ORDER BY SUM(quantity); 
+
+--Display the three most expensive items
+SELECT item_name AS Item, price
+FROM store_database
+ORDER BY price desc
+LIMIT 3; 
