@@ -1,0 +1,157 @@
+/* Top Lifetime Grosses - Box Office: https://www.boxofficemojo.com/chart/ww_top_lifetime_gross/?area=XWW&ref_=bo_cso_ac */
+ 
+CREATE TABLE top_movies (Rank INTEGER PRIMARY KEY AUTOINCREMENT, Title TEXT, Worldwide REAL, Domestic REAL, Domestic_pct REAL, Overseas
+REAL, Overseas_pct REAL, Year INTEGER, Studio TEXT, Rating TEXT); 
+
+INSERT INTO top_movies (title, worldwide, domestic, domestic_pct, overseas, overseas_pct, year, studio, rating) VALUES 
+('Avatar', 2847397339, 760507625, 0.267, 2086889714, 0.733, 2009,'Twentieth Century Fox','PG-13'),
+('Avengers: Endgame', 2797501328, 858373000, 0.307, 1939128328, 0.693, 2019,'Walt Disney Studios','PG-13'),
+('Titanic', 2201647264, 659363944, 0.3, 1542283320, 0.7, 1997,'Paramount Pictures','PG-13'),
+('Star Wars: Episode VII - The Force Awakens', 2069521700, 936662225, 0.453, 1132859475, 0.547, 2015,'Walt Disney Studios','PG-13'),
+('Avengers: Infinity War', 2048359754, 678815482, 0.331, 1369544272, 0.669, 2018,'Walt Disney Studios','PG-13'),
+('Spider-Man: No Way Home', 1901232550, 804793477, 0.423, 1096439073, 0.577, 2021,'Sony','PG-13'),
+('Jurassic World', 1671537444, 653406625, 0.391, 1018130819, 0.609, 2015,'Universal Pictures','PG-13'),
+('The Lion King', 1663250487, 543638043, 0.327, 1119612444, 0.673, 2019,'Walt Disney Studios','PG'),
+('The Avengers', 1518815515, 623357910, 0.41, 895457605, 0.59, 2012,'Walt Disney Studios','PG-13'),
+('Furious 7', 1515341399, 353007020, 0.233, 1162334379, 0.767, 2015,'Universal Pictures','PG-13'),
+('Frozen II', 1450026933, 477373578, 0.329, 972653355, 0.671, 2019,'Walt Disney Studios','PG'),
+('Avengers: Age of Ultron', 1402809540, 459005868, 0.327, 943803672, 0.673, 2015,'Walt Disney Studios','PG-13'),
+('Top Gun: Maverick', 1383274834, 679074834, 0.491, 704200000, 0.509, 2022,'Paramount Pictures','PG-13'),
+('Black Panther', 1347597973, 700426566, 0.52, 647171407, 0.48, 2018,'Walt Disney Studios','PG-13'),
+('Harry Potter and the Deathly Hallows: Part 2', 1342359942, 381447587, 0.284, 960912355, 0.716, 2011,'Warner Bros.','PG-13'),
+('Star Wars: Episode VIII - The Last Jedi', 1332698830, 620181382, 0.465, 712517448, 0.535, 2017,'Walt Disney Studios','PG-13'),
+('Jurassic World: Fallen Kingdom', 1310466296, 417719760, 0.319, 892746536, 0.681, 2018,'Universal Pictures','PG-13'),
+('Frozen', 1281508100, 400953009, 0.313, 880555091, 0.687, 2013,'Walt Disney Studios','PG'),
+('Beauty and the Beast', 1273576220, 504481165, 0.396, 769095055, 0.604, 2017,'Walt Disney Studios','PG'),
+('Incredibles 2', 1243089244, 608581744, 0.49, 634507500, 0.51, 2018,'Walt Disney Studios','PG'),
+('The Fate of the Furious', 1236005118, 226008385, 0.183, 1009996733, 0.817, 2017,'Universal Pictures','PG-13'),
+('Iron Man 3', 1214811252, 409013994, 0.337, 805797258, 0.663, 2013,'Walt Disney Studios','PG-13'),
+('Minions', 1159444662, 336045770, 0.29, 823398892, 0.71, 2015,'Universal Pictures','PG'),
+('Captain America: Civil War', 1153337496, 408084349, 0.354, 745253147, 0.646, 2016,'Walt Disney Studios','PG-13'),
+('Aquaman', 1148528393, 335104314, 0.292, 813424079, 0.708, 2018,'Warner Bros.','PG-13'),
+('The Lord of the Rings: The Return of the King', 1146436214, 378251207, 0.33, 768185007, 0.67, 2003,'New Line Cinema','PG-13'),
+('Spider-Man: Far from Home', 1131927996, 390532085, 0.345, 741395911, 0.655, 2019,'Sony','PG-13'),
+('Captain Marvel', 1128462972, 426829839, 0.378, 701633133, 0.622, 2019,'Walt Disney Studios','PG-13'),
+('Transformers: Dark of the Moon', 1123794079, 352390543, 0.314, 771403536, 0.686, 2011,'Dreamworks','PG-13'),
+('Skyfall', 1108569499, 304360277, 0.275, 804209222, 0.725, 2012,'Sony','PG-13'),
+('Transformers: Age of Extinction', 1104054072, 245439076, 0.222, 858614996, 0.778, 2014,'Paramount Pictures','PG-13'),
+('Jurassic Park', 1099699003, 404214720, 0.368, 695484283, 0.632, 1993,'Universal Pictures','PG-13'),
+('The Dark Knight Rises', 1081153097, 448149584, 0.414, 633003513, 0.586, 2012,'Warner Bros.','PG-13'),
+('Joker', 1074445730, 335477657, 0.312, 738968073, 0.688, 2019,'Warner Bros.','R'),
+('Star Wars: Episode IX - The Rise of Skywalker', 1074149279, 515202542, 0.48, 558946737, 0.52, 2019,'Walt Disney Studios','PG-13'),
+('Toy Story 4', 1073394593, 434038008, 0.404, 639356585, 0.596, 2019,'Walt Disney Studios','G'),
+('Toy Story 3', 1066970811, 415004880, 0.389, 651965931, 0.611, 2010,'Walt Disney Studios','G'),
+('Pirates of the Caribbean: Dead Mans Chest', 1066179747, 423315812, 0.397, 642863935, 0.603, 2006,'Walt Disney Studios','PG-13'),
+('The Lion King', 1063611805, 422783777, 0.398, 640828028, 0.602, 1994,'Walt Disney Studios','G'),
+('Rogue One: A Star Wars Story', 1056057720, 532177324, 0.504, 523880396, 0.496, 2016,'Walt Disney Studios','PG-13'),
+('Aladdin', 1050693953, 355559216, 0.338, 695134737, 0.662, 2019,'Walt Disney Studios','PG'),
+('Pirates of the Caribbean: On Stranger Tides', 1045713802, 241071802, 0.23, 804642000, 0.77, 2011,'Walt Disney Studios','PG-13'),
+('Despicable Me 3', 1034800131, 264624300, 0.256, 770175831, 0.744, 2017,'Universal Pictures','PG'),
+('Finding Dory', 1028570942, 486295561, 0.473, 542275381, 0.527, 2016,'Walt Disney Studios','PG'),
+('Star Wars: Episode I - The Phantom Menace', 1027082707, 474544677, 0.462, 552538030, 0.538, 1999,'Twentieth Century Fox','PG'),
+('Alice in Wonderland', 1025468216, 334191110, 0.326, 691277106, 0.674, 2010,'Walt Disney Studios','PG'),
+('Zootopia', 1024121104, 341268248, 0.333, 682852856, 0.667, 2016,'Walt Disney Studios','PG'),
+('Harry Potter and the Sorcerers Stone', 1022290019, 318886962, 0.312, 703403057, 0.688, 2001,'Warner Bros.','PG'),
+('The Hobbit: An Unexpected Journey', 1017030651, 303030651, 0.298, 714000000, 0.702, 2012,'Warner Bros.','PG-13'),
+('The Dark Knight', 1006102277, 534987076, 0.532, 471115201, 0.468, 2008,'Warner Bros.','PG-13'),
+('Harry Potter and the Deathly Hallows: Part 1', 977070383, 296374621, 0.303, 680695762, 0.697, 2010,'Warner Bros.','PG-13'),
+('Jurassic World Dominion', 974941495, 373523495, 0.383, 601418000, 0.617, 2022,'Universal Pictures','PG-13'),
+('Despicable Me 2', 970766005, 368065385, 0.379, 602700620, 0.621, 2013,'Universal Pictures','PG'),
+('The Jungle Book', 966554929, 364001123, 0.377, 602553806, 0.623, 2016,'Walt Disney Studios','PG'),
+('Jumanji: Welcome to the Jungle', 962542945, 404540171, 0.42, 558002774, 0.58, 2017,'Sony','PG-13'),
+('The Hobbit: The Battle of the Five Armies', 962201338, 255138261, 0.265, 707063077, 0.735, 2014,'Warner Bros.','PG-13'),
+('Pirates of the Caribbean: At Worlds End', 960996492, 309420425, 0.322, 651576067, 0.678, 2007,'Walt Disney Studios','PG-13'),
+('The Hobbit: The Desolation of Smaug', 959027992, 258387334, 0.269, 700640658, 0.731, 2013,'Warner Bros.','PG-13'),
+('Doctor Strange in the Multiverse of Madness', 954998698, 411331607, 0.431, 543667091, 0.569, 2022,'Walt Disney Studios','PG-13'),
+('The Lord of the Rings: The Two Towers', 947896241, 342952511, 0.362, 604943730, 0.638, 2002,'New Line Cinema','PG-13'),
+('Harry Potter and the Order of the Phoenix', 942201710, 292382727, 0.31, 649818983, 0.69, 2007,'Warner Bros.','PG-13'),
+('Finding Nemo', 940352645, 380843261, 0.405, 559509384, 0.595, 2003,'Walt Disney Studios','G'),
+('Harry Potter and the Half-Blood Prince', 934483039, 302334374, 0.324, 632148665, 0.676, 2009,'Warner Bros.','PG'),
+('Shrek 2', 928760770, 441226247, 0.475, 487534523, 0.525, 2004,'Dreamworks','PG'),
+('Bohemian Rhapsody', 910809311, 216668042, 0.238, 694141269, 0.762, 2018,'Twentieth Century Fox','PG-13'),
+('The Lord of the Rings: The Fellowship of the Ring', 898094742, 316115420, 0.352, 581979322, 0.648, 2001,'New Line Cinema','PG-13'),
+('Harry Potter and the Goblet of Fire', 896730264, 290469928, 0.324, 606260336, 0.676, 2005,'Warner Bros.','PG-13'),
+('Spider-Man 3', 894983373, 336530303, 0.376, 558453070, 0.624, 2007,'Sony','PG-13'),
+('Ice Age: Dawn of the Dinosaurs', 886686817, 196573705, 0.222, 690113112, 0.778, 2009,'Twentieth Century Fox','PG'),
+('Spectre', 880681519, 200074609, 0.227, 680606910, 0.773, 2015,'Sony','PG-13'),
+('Spider-Man: Homecoming', 880166924, 334201140, 0.38, 545965784, 0.62, 2017,'Sony','PG-13'),
+('Harry Potter and the Chamber of Secrets', 879928511, 262641637, 0.298, 617286874, 0.702, 2002,'Warner Bros.','PG'),
+('Ice Age: Continental Drift', 877244782, 161321843, 0.184, 715922939, 0.816, 2012,'Twentieth Century Fox','PG'),
+('The Secret Life of Pets', 875458631, 368384330, 0.421, 507074301, 0.579, 2016,'Universal Pictures','PG'),
+('Batman v Superman: Dawn of Justice', 873637528, 330360194, 0.378, 543277334, 0.622, 2016,'Warner Bros.','PG-13'),
+('Star Wars: Episode III - Revenge of the Sith', 868390560, 380270577, 0.438, 488119983, 0.562, 2005,'Twentieth Century Fox','PG-13'),
+('The Hunger Games: Catching Fire', 865011746, 424668047, 0.491, 440343699, 0.509, 2013,'Lionsgate','PG-13'),
+('Guardians of the Galaxy Vol. 2', 863756051, 389813101, 0.451, 473942950, 0.549, 2017,'Walt Disney Studios','PG-13'),
+('Inside Out', 858848019, 356921711, 0.416, 501926308, 0.584, 2015,'Walt Disney Studios','PG'),
+('Venom', 856085151, 213515506, 0.249, 642569645, 0.751, 2018,'Sony','PG-13'),
+('Thor: Ragnarok', 853983879, 315058289, 0.369, 538925590, 0.631, 2017,'Walt Disney Studios','PG-13'),
+('Inception', 836848102, 292587330, 0.35, 544260772, 0.65, 2010,'Warner Bros.','PG-13'),
+('Transformers: Revenge of the Fallen', 836303693, 402111870, 0.481, 434191823, 0.519, 2009,'Dreamworks','PG-13'),
+('The Twilight Saga: Breaking Dawn - Part 2', 829747654, 292324737, 0.352, 537422917, 0.648, 2012,'Lionsgate','PG-13'),
+('Spider-Man', 825025036, 407022860, 0.493, 418002176, 0.507, 2002,'Sony','PG-13'),
+('Wonder Woman', 822854286, 412845172, 0.502, 410009114, 0.498, 2017,'Warner Bros.','PG-13'),
+('Independence Day', 817400891, 306169268, 0.375, 511231623, 0.625, 1996,'Twentieth Century Fox','PG-13'),
+('Fantastic Beasts and Where to Find Them', 814044001, 234037575, 0.288, 580006426, 0.712, 2016,'Warner Bros.','PG-13'),
+('Shrek the Third', 813367380, 322719944, 0.397, 490647436, 0.603, 2007,'Dreamworks','PG'),
+('Coco', 807817888, 210460015, 0.26, 597357873, 0.74, 2017,'Walt Disney Studios','PG'),
+('Jumanji: The Next Level', 800059707, 320314960, 0.4, 479744747, 0.6, 2019,'Sony','PG-13'),
+('Harry Potter and the Prisoner of Azkaban', 797568607, 250105651, 0.314, 547462956, 0.686, 2004,'Warner Bros.','PG'),
+('Pirates of the Caribbean: Dead Men Tell No Tales', 794881442, 172558876, 0.217, 622322566, 0.783, 2017,'Walt Disney Studios','PG-13'),
+('Minions: The Rise of Gru', 794342990, 347436990, 0.437, 446906000, 0.563, 2022,'Universal Pictures','PG'),
+('E.T. the Extra-Terrestrial', 792910554, 436647019, 0.551, 356263535, 0.449, 1982,'Universal Pictures','PG'),
+('Mission: Impossible - Fallout', 791657398, 220159104, 0.278, 571498294, 0.722, 2018,'Paramount Pictures','PG-13'),
+('2012', 791217826, 166112167, 0.21, 625105659, 0.79, 2009,'Sony','PG-13'),
+('Indiana Jones and the Kingdom of the Crystal Skull', 790653942, 317101119, 0.401, 473552823, 0.599, 2008,'Paramount Pictures','PG-13'),
+('Spider-Man 2', 788976453, 373585825, 0.474, 415390628, 0.526, 2004,'Sony','PG-13'),
+('Fast & Furious 6', 788680968, 238679850, 0.303, 550001118, 0.697, 2013,'Universal Pictures','PG-13'); 
+
+SELECT *
+FROM top_movies; 
+
+/* Number of movies in the rankling along with the oldest and most recent movie years in the dataset */
+SELECT COUNT(*) AS Movies, MIN(Year) AS Oldest, MAX(Year) AS Most_Recent
+FROM top_movies; 
+
+/* Which studios produces the highest ranking movies in the world?*/
+SELECT studio, COUNT(*) AS Movies, ROUND(AVG(worldwide)) AS Avg_Gross, SUM(worldwide) AS Total_Gross
+FROM top_movies
+GROUP BY studio
+HAVING COUNT(*) > 5
+ORDER BY COUNT(*) desc;  
+
+/* Top movies by Disney*/
+SELECT rank, title, year
+FROM top_movies
+WHERE studio LIKE '%Disney%'
+ORDER BY worldwide desc
+LIMIT 5; 
+
+/* Top movies by WB */
+SELECT rank, title, year
+FROM top_movies
+WHERE studio LIKE '%Warner%'
+LIMIT 5; 
+
+/* Which movies performed better domestically than overseas? */
+SELECT title, year 
+FROM top_movies
+WHERE domestic > overseas; 
+
+/* Number of high ranking movies by era */
+SELECT COUNT(*) AS Movies, 
+    CASE
+        WHEN year < 1980 THEN "1970s"
+        WHEN year < 1990 THEN "1980s"
+        WHEN year < 2000 THEN "1990s" 
+        WHEN year < 2010 THEN "2000s" 
+        WHEN year < 2020 THEN "2010s" 
+        ELSE "Present"
+    END as "Decade"
+FROM top_movies
+GROUP BY Decade
+ORDER BY Decade asc;
+
+/* Movies by Rating */
+SELECT COUNT(*) AS Movies, rating
+FROM top_movies
+GROUP BY rating
